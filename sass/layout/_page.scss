@@ -1,0 +1,10 @@
+@use '../abstracts/' as abs;
+
+main {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin: 4.5rem 1rem;
+	border-radius: 5px;
+	box-shadow: -3px 3px 18px 9px rgba(0,0,0,0.1);
+}

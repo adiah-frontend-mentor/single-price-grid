@@ -1,0 +1,56 @@
+.offer {
+	background-color: var(--clr-primary);
+	padding: 1.5rem;
+
+	&__heading {
+		color: white;
+		font-weight: 700;
+		font-size: 1.125rem;
+		letter-spacing: -0.1;
+		line-height: 1.4;
+		margin-bottom: 1rem;
+
+	}
+
+	&__pricing {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+
+		.price {
+
+			
+			font-size: 2rem;
+			font-weight: 700;
+			color: white;
+		}
+		
+		.period {
+			color: var(--clr-light-faded);
+			font-size: 1rem;
+			letter-spacing: -0.1px;
+			font-weight: 400;
+		}
+	}
+
+	&__body {
+		color: var(--clr-light);
+		font-size: 1rem;
+		letter-spacing: -0.1px;
+		margin-bottom: 1.875rem;
+	}
+
+	&__cta {
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		background-color: var(--clr-accent);
+		width: 100%;
+		padding-block: 1rem;
+		border-radius: 7px;
+		font-size: 1rem;
+		font-weight: 700;
+		color: white;
+		box-shadow: 4px 12px 18px 2px rgba(0,0,0,0.1);
+	}
+}

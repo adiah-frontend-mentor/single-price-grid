@@ -1,0 +1,21 @@
+.marketing {
+	background-color: var(--clr-primary-faded);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 1.5rem;
+
+	&__heading {
+		color: white;
+		font-size: 1.125rem;
+		font-weight: 700;
+		letter-spacing: -0.1;
+	}
+
+	&__body {
+		list-style: none;
+		padding: 0;
+		margin-top: 1rem;
+		color: var(--clr-light);
+		font-size: 0.875rem;
+	}
+}

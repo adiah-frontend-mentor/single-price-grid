@@ -1,0 +1,33 @@
+@use '../abstracts/' as abs;
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	// background-color: pink;
+
+	&__heading {
+		color: var(--clr-primary);
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+
+	}
+
+	&__sub-heading {
+		color: var(--clr-accent);
+		font-size: abs.rem(15);
+		font-weight: 700;
+		line-height: 1.3;
+		letter-spacing: 0.12px;
+		margin-bottom: 1.375rem;
+	}
+
+	&__body {
+		font-size: 0.875rem;
+		letter-spacing: -0.1px;
+		line-height: 1.85;
+	}
+}

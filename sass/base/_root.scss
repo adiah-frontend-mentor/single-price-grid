@@ -1,0 +1,31 @@
+@use '../abstracts/' as a;
+
+:root {
+
+	// colors
+	--clr-primary: hsl(179, 62%, 43%);
+	--clr-primary-faded: hsl(179, 62%, 43%, 0.75);
+	--clr-accent: hsl(71, 73%, 54%);
+	--clr-dark: hsl(218, 22%, 67%);
+	--clr-light: hsl(204, 43%, 93%);
+	--clr-light-faded: hsl(204, 43%, 93%, 0.58);
+
+	// font-families
+	--ff-sans: 'Karla', sans-serif;
+
+	// font-sizes from ../abstract/type
+	// Might need to add more breakpoints
+	// @each $screen-size, $font-size in a.$type-scale {
+	// 	@if $screen-size == small {
+	// 		@each $size, $value in $font-size {
+	// 			--fs-#{$size}: #{$value};
+	// 		}
+	// 	} @else {
+	// 		@include a.breakpoint(medium) {
+	// 			@each $size, $value in $font-size {
+	// 				--fs-#{$size}: #{$value};
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
