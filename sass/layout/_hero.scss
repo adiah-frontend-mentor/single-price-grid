@@ -8,11 +8,21 @@
 	border-top-right-radius: 5px;
 	// background-color: pink;
 
+	@include abs.breakpoint(medium) {
+		grid-area: hero;
+		padding: 2.5rem;
+	}
+
 	&__heading {
 		color: var(--clr-primary);
 		font-size: 1.25rem;
 		font-weight: 700;
 		margin-bottom: 1.5rem;
+
+		@include abs.breakpoint(medium) {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
 
 	}
 
@@ -23,11 +33,21 @@
 		line-height: 1.3;
 		letter-spacing: 0.12px;
 		margin-bottom: 1.375rem;
+
+		@include abs.breakpoint(medium) {
+			font-size: 1.125rem;
+			margin-bottom: 0.8125rem;
+		}
 	}
 
 	&__body {
 		font-size: 0.875rem;
 		letter-spacing: -0.1px;
 		line-height: 1.85;
+
+		@include abs.breakpoint(medium) {
+			font-size: 1rem;
+			line-height: 1.625;
+		}
 	}
 }

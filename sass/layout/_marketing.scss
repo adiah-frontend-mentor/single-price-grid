@@ -1,8 +1,16 @@
+@use '../abstracts/' as abs;
+
 .marketing {
 	background-color: var(--clr-primary-faded);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: 1.5rem;
+
+	@include abs.breakpoint(medium) {
+		grid-area: marketing;
+		border-bottom-left-radius: 0;
+		padding: 2.5rem;
+	}
 
 	&__heading {
 		color: white;

@@ -7,4 +7,16 @@ main {
 	margin: 4.5rem 1rem;
 	border-radius: 5px;
 	box-shadow: -3px 3px 18px 9px rgba(0,0,0,0.1);
+
+	@include abs.breakpoint(medium) {
+		margin-inline: auto;
+		width: 44%;
+		max-width: abs.rem(635);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: 
+			'hero hero'
+			'offer marketing';
+	}
 }

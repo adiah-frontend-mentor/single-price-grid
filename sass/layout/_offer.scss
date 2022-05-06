@@ -1,6 +1,14 @@
+@use '../abstracts/' as abs;
+
 .offer {
 	background-color: var(--clr-primary);
 	padding: 1.5rem;
+
+	@include abs.breakpoint(medium) {
+		grid-area: offer;
+		border-bottom-left-radius: 5px;
+		padding: 2.5rem;
+	}
 
 	&__heading {
 		color: white;
